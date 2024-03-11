@@ -1,14 +1,38 @@
-{
-  "brand_name": "Karen",
-  "home": "Home",
-  "about": "About",
-  "skills": "Skills",
-  "portfolio": "Portfolio",
-  "contact": "Contact",
-  "greeting": "Hello",
-  "intro_prefix": "I am",
-  "user_name": "Karen González",
-  "frontend": "Frontend",
-  "download_cv": "Download CV",
-  "view_portfolio": "View Portfolio"
-}
+const translationEN = {
+  nav: {
+    home: 'Home',
+    about: 'About',
+    skills: 'Skills',
+    portfolio: 'Portfolio',
+    contact: 'Contact',
+  },
+  header: {
+    hi: 'Hello',
+    iam: 'I\'m ',
+    download: 'Download CV',
+    portfolio: 'Portfolio',
+  },
+  about: {
+    aboutme: 'About me',
+    p1: 'Recently graduated in ',
+    career: 'Software Engineering and Computer Systems ',
+    p2: 'with an interest in frontend development. Although my work experience is limited, my academic background has provided me with knowledge in programming. I am a proactive person seeking opportunities to apply and improve my skills, with a dedicated focus on continuous learning.',
+  },
+  skills: {
+    myskills: 'My skills'
+  },
+  portfolio: {
+    portfolio: 'Portfolio',
+    technologies: 'Technologies used: ',
+    pj1_title: 'Speech to text',
+    pj2_title: 'Auditorium reservations',
+    li1: 'Simple Speech to Text application built using React. It allows users to convert spoken language into text.',
+    li2: 'Local page to reserve the auditorium at UNID Campus.',
+    li2_1: 'Reservation history, administrative roles, FullCalendar',
+  },
+  contact: {
+    contactme: 'Contact me'
+  }
+};
+
+export default translationEN;

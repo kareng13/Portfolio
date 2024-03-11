@@ -1,8 +1,18 @@
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+
+    i18n.changeLanguage(language);
+
+  };
+
   return (
     <section className="section_contact" id="Contact">
       <h1 className="title_skills">
-        {"<"}Contáctame{">"}
+        {"<"}{t('contact.contactme')}{">"}
       </h1>
       <div className="container_contact">
         <div class="content_contact">

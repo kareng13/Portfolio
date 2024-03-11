@@ -1,9 +1,31 @@
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 const Nav = () => {
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [language, setLanguage] = useState('en');
 
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+  
+
+  const leftClick = () => {
+    btn.style.left = '0';
+    setLanguage('es');
+    i18n.changeLanguage('es');
+  };
+
+  const rightClick = () => {
+    setLanguage('en');
+    btn.style.left = '39px';
+    i18n.changeLanguage('en');
+  };
+
   return (
     <>
       {" "}
@@ -35,55 +57,35 @@ const Nav = () => {
           />
           <ul className="nav_ul" onClick={handleLinkClick}>
             <li>
-              <a href="#">Inicio </a>
+              <a href="#">{t('nav.home')}</a>
             </li>
             <li>
-              <a href="#About">Sobre mí </a>
+              <a href="#About">{t('nav.about')}</a>
             </li>
             <li>
-              <a href="#Skills">Habilidades </a>
+              <a href="#Skills">{t('nav.skills')}</a>
             </li>
             <li>
-              <a href="#Portfolio">Portafolio </a>
+              <a href="#Portfolio">{t('nav.portfolio')}</a>
             </li>
             <li>
-              <a href="#Contact">Contacto </a>
+              <a href="#Contact">{t('nav.contact')}</a>
             </li>
-          </ul>
+          <div className="form-box">
+            <div className="button-box">
+              <div id='btn'></div>
+              <button type="button" className="toggle-btn" onClick={leftClick}>
+          ES
+        </button>
+        <button type="button" className="toggle-btn" onClick={rightClick}>
+          EN
+        </button>
+              </div>
+          </div>
+              </ul>
         </div>
       </nav>
-      <section className="section_header">
-        <div className="section_container">
-          <div className="content_header">
-            <p className="subtitle_header">Hola</p>
-            <h1 className="title_header">
-              Soy{" "}
-              <span>
-                Karen González
-                <br />
-              </span>
-              Frontend
-            </h1>
-            <div className="action_btn_header">
-              <a
-                href="/CV_GuillenGonzalezKarenSofia.pdf"
-                download="GuillenGonzálezKarenSofia_CV.pdf"
-              >
-                <button className="cv">Descargar CV</button>
-              </a>
-              <a href="#Portfolio">
-                <button className="portfolio">Portafolio</button>
-              </a>
-            </div>
-          </div>
-          <div className="image_header">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNTg3OGQ0NjktM2E5Ny00OGU0LWI2YzktMzA0NzM5NTNjOGE0XkEyXkFqcGdeQXVyODU3MzI2MDM@._V1_.jpg"
-              alt="Mia"
-            />
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 };
