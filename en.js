@@ -28,6 +28,8 @@ const translationEN = {
     li1: 'Simple Speech to Text application built using React. It allows users to convert spoken language into text.',
     li2: 'Local page to reserve the auditorium at UNID Campus.',
     li2_1: 'Reservation history, administrative roles, FullCalendar',
+    pj3_title: 'Portfolio',
+    li3: 'Personal portfolio'
   },
   contact: {
     contactme: 'Contact me',
