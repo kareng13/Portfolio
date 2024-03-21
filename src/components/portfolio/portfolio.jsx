@@ -1,17 +1,19 @@
-import React, {useState, useEffect} from 'react'
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import Image from 'next/image';
-import speechtotext from "@/images/projects/speech-to-text.png"
-import portfoliopy from "@/images/projects/portfolio.png"
-import rvLogin from "@/images/projects/reservation_login.png"
-import rvIndex1 from "@/images/projects/reservation_index1.png"
+import speechtotext from "@/images/projects/speech-to-text.png";
+import portfoliopy from "@/images/projects/portfolio.png";
+import rvLogin from "@/images/projects/reservation_login.png";
+import rvIndex1 from "@/images/projects/reservation_index1.png";
 
-function portfolio() {
-  const { t, i18n } = useTranslation();
+function Portfolio() {
+  const { t, i18n } = useTranslation(); //translation
+
   const [imageIndex, setImageIndex] = useState(0);
   const images = [rvLogin, rvIndex1]; 
 
   const changeLanguage = (language) => {
+    //translation
     i18n.changeLanguage(language);
   };
 
@@ -126,4 +128,4 @@ function portfolio() {
   )
 }
 
-export default portfolio
+export default Portfolio;
