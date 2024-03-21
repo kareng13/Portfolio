@@ -23,7 +23,6 @@ const translationES = {
       },
       portfolio: {
         portfolio: 'Portafolio',
-        technologies: 'Tecnologías utilizadas: ',
         pj1_title: 'Dictado a texto',
         pj2_title: 'Reservas de auditorio',
         li1: 'Aplicación de Texto a Voz construida con React. Permite a los usuarios convertir el lenguaje hablado en texto.',
@@ -31,7 +30,10 @@ const translationES = {
         li2_1: 'Historial de reservación, roles administrativos, FullCalendar',
       },
       contact: {
-        contactme: 'Contáctame'
+        contactme: 'Contáctame',
+        phone: 'Celular',
+        email: 'Correo electrónico',
+        location: 'Ubicación'
       }
   };
   

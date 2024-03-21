@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import Bootstrap from "@/components/bootstrap/bootstrap";
 import Nav from "@/components/header/nav";
-import Header from "@/components/header/header";
 import About from "@/components/about/about";
 import Skills from "@/components/skills/skills";
 import Portfolio from "@/components/portfolio/portfolio";
@@ -17,7 +16,6 @@ function Home() {
     <main>
       <I18nextProvider i18n={i18n}>
         <Nav />
-        <Header />
         <Bootstrap />
         <About />
         <Skills />
@@ -27,5 +25,6 @@ function Home() {
     </main>
   );
 }
+
 export default appWithTranslation(Home);
 

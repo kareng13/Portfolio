@@ -23,7 +23,6 @@ const translationEN = {
   },
   portfolio: {
     portfolio: 'Portfolio',
-    technologies: 'Technologies used: ',
     pj1_title: 'Speech to text',
     pj2_title: 'Auditorium reservations',
     li1: 'Simple Speech to Text application built using React. It allows users to convert spoken language into text.',
@@ -31,7 +30,10 @@ const translationEN = {
     li2_1: 'Reservation history, administrative roles, FullCalendar',
   },
   contact: {
-    contactme: 'Contact me'
+    contactme: 'Contact me',
+    phone: 'Phone',
+    email: 'Email',
+    location: 'Location'
   }
 };
 

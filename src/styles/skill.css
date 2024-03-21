@@ -1,0 +1,43 @@
+/* Skill */
+.skill .skill-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.skill .skill-item .skill-item-inner{
+    background-color: var(  --bg-black-50);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition:  all 0.35 ease;
+}
+.skill .skill-item .skill-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.skill .skill-item .skill-item-inner .icon{
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto 35px;
+}
+.skill .skill-item .skill-item-inner .icon img{
+    height: 65px;
+    width: auto;
+}
+.skill .skill-item .skill-item-inner p{
+    color: var(--text-black-900);
+}
+@media (max-width:991px) {
+    .skill .skill-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width:530px) {
+    .skill .skill-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
