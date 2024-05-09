@@ -29,7 +29,8 @@ const translationES = {
         li2: 'Página local para la reservación del auditorio de UNID Campus',
         li2_1: 'Historial de reservación, roles administrativos, FullCalendar',
         pj3_title: 'Portafolio',
-        li3: 'Personal portafolio'
+        li3: 'Personal portafolio',
+        li4: 'Diseño de página VOID'
       },
       contact: {
         contactme: 'Contáctame',

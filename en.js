@@ -29,7 +29,8 @@ const translationEN = {
     li2: 'Local page to reserve the auditorium at UNID Campus.',
     li2_1: 'Reservation history, administrative roles, FullCalendar',
     pj3_title: 'Portfolio',
-    li3: 'Personal portfolio'
+    li3: 'Personal portfolio',
+    li4: 'VOID page design'
   },
   contact: {
     contactme: 'Contact me',

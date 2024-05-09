@@ -109,7 +109,7 @@ function Nav() {
                 <div className="row">
                   <div className="buttons">
                     <a
-                      href="https://drive.google.com/file/d/1er2qS1SHAiQf_6tBOan2LIdh1Jo46y4t/view"
+                      href="https://drive.google.com/file/d/1ibPzTdzPV-veJll7HlGGlJHWu9hyZHWl/view?usp=sharing"
                       target="_blank"
                       className="btn hire-me"
                     >
